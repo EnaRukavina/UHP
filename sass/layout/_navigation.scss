@@ -1,0 +1,33 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__list {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-family: $font-primary;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  &__item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 5rem;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: $col-white;
+    transition: all 0.2s;
+
+    &:hover {
+      border-bottom: 0.6rem solid $col-primary-3;
+    }
+
+    &--active {
+      border-bottom: 0.6rem solid $col-primary-3;
+    }
+  }
+}
