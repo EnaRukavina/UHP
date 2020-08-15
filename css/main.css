@@ -660,6 +660,10 @@ hr {
   margin-right: 1rem;
 }
 
+.copyright__icons__icon:last-child {
+  margin-right: 3rem;
+}
+
 .copyright__icons__icon:hover {
   color: #00a6eb;
 }
@@ -669,6 +673,8 @@ hr {
   bottom: 0;
   left: 50%;
   cursor: pointer;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* BACKGROUND IMAGE */
