@@ -1,6 +1,7 @@
 .footer {
   background-color: $col-black;
   padding-top: 4.5rem;
+  position: relative;
   &__logo {
     display: block;
     margin: auto;
@@ -10,10 +11,10 @@
 
 .info-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   border-top: 1px solid $col-primary-6;
   border-bottom: 1px solid $col-primary-7;
-  padding: 6rem 0;
+  padding: 6rem 28rem;
 }
 
 .info {
@@ -33,6 +34,39 @@
     &--bottom {
       font-size: 1.4rem;
       color: $col-primary-1;
+      cursor: pointer;
     }
   }
+}
+
+.copyright {
+  padding: 3rem 28rem;
+  color: $col-white;
+  font-family: $font-primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__text {
+    font-size: 1.3rem;
+  }
+  &__icons {
+    font-size: 3rem;
+    &__icon {
+      transition: all 0.1s;
+      cursor: pointer;
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+      &:hover {
+        color: $col-primary-1;
+      }
+    }
+  }
+}
+
+.top-arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  cursor: pointer;
 }

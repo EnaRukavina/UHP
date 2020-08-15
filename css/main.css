@@ -9,6 +9,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -580,6 +581,7 @@ hr {
 .footer {
   background-color: #002041;
   padding-top: 4.5rem;
+  position: relative;
 }
 
 .footer__logo {
@@ -592,11 +594,12 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-top: 1px solid #0079b2;
   border-bottom: 1px solid #003a62;
-  padding: 6rem 0;
+  padding: 6rem 28rem;
 }
 
 .info {
@@ -621,6 +624,51 @@ hr {
 .info__text--bottom {
   font-size: 1.4rem;
   color: #00a6eb;
+  cursor: pointer;
+}
+
+.copyright {
+  padding: 3rem 28rem;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.copyright__text {
+  font-size: 1.3rem;
+}
+
+.copyright__icons {
+  font-size: 3rem;
+}
+
+.copyright__icons__icon {
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+.copyright__icons__icon:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.copyright__icons__icon:hover {
+  color: #00a6eb;
+}
+
+.top-arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  cursor: pointer;
 }
 
 /* BACKGROUND IMAGE */
