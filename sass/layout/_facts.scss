@@ -1,0 +1,51 @@
+.facts-section {
+  &__text {
+    text-align: center;
+    font-family: $font-primary;
+  }
+  &__title {
+    color: $col-primary-1;
+    font-size: 6rem;
+    font-weight: 700;
+  }
+  &__subtitle {
+    font-size: 5rem;
+    font-weight: 400;
+    color: $col-black;
+    margin-bottom: 4rem;
+  }
+  &__paragraph {
+    font-size: 2.5rem;
+    color: $col-black;
+    font-weight: 300;
+  }
+}
+
+.bullet {
+  color: $col-primary-5;
+  font-weight: 400;
+}
+
+.facts {
+  display: flex;
+  text-align: center;
+  font-family: $font-primary;
+  justify-content: space-between;
+  padding: 12rem 5rem 16rem;
+}
+.fact {
+  flex-basis: 18rem;
+  &__icon {
+    margin-bottom: 2rem;
+    width: 11rem;
+    height: 11rem;
+  }
+  &__percent {
+    font-size: 5rem;
+    font-weight: 700;
+  }
+  &__text {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+}

@@ -14,3 +14,12 @@ html {
 body {
   box-sizing: border-box;
 }
+
+hr {
+  width: 5rem;
+  background-color: $col-primary-1;
+  margin: auto;
+  height: 4px;
+  border: none;
+  border-radius: 1rem;
+}

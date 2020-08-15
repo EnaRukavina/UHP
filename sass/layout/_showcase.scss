@@ -1,0 +1,81 @@
+.section-showcase {
+  position: relative;
+  &__title {
+    text-align: center;
+    font-family: $font-primary;
+    font-weight: 700;
+    font-size: 6rem;
+    color: $col-black;
+  }
+  &__paragraph {
+    text-align: center;
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  &__bg {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    top: 11rem;
+  }
+}
+
+.showcase {
+  margin: 11rem 0 28rem;
+  display: flex;
+  justify-content: space-between;
+
+  &__image {
+    position: relative;
+    margin-right: 18rem;
+    margin-left: 12rem;
+  }
+
+  &__title {
+    font-family: $font-primary;
+    font-size: 5rem;
+    font-weight: 700;
+    color: $col-black;
+    margin-left: 7rem;
+  }
+
+  &__subtitle {
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 5rem;
+    color: $col-primary-1;
+    margin-bottom: 5rem;
+    margin-left: 7rem;
+  }
+
+  &__plan {
+    &__text {
+      font-family: $font-secondary;
+      color: $col-black;
+      margin: 0 4rem 4rem 7rem;
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+
+    &__paragraph {
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 1.4;
+    }
+
+    &__icon {
+      float: left;
+      position: relative;
+      top: 2.3rem;
+    }
+  }
+
+  &__btn-container {
+    margin-left: 7rem;
+  }
+}

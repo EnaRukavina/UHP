@@ -1,0 +1,38 @@
+.footer {
+  background-color: $col-black;
+  padding-top: 4.5rem;
+  &__logo {
+    display: block;
+    margin: auto;
+    margin-bottom: 5rem;
+  }
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid $col-primary-6;
+  border-bottom: 1px solid $col-primary-7;
+  padding: 6rem 0;
+}
+
+.info {
+  color: $col-white;
+  font-family: $font-primary;
+  display: flex;
+  align-items: center;
+  &__icon {
+    margin-right: 3rem;
+    &__img {
+    }
+  }
+  &__text {
+    &--top {
+      font-size: 1.8rem;
+    }
+    &--bottom {
+      font-size: 1.4rem;
+      color: $col-primary-1;
+    }
+  }
+}
