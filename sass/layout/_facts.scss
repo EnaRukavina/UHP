@@ -43,6 +43,9 @@
   &__percent {
     font-size: 5rem;
     font-weight: 700;
+    &::after {
+      content: "%";
+    }
   }
   &__text {
     font-size: 3rem;
