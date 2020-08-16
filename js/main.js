@@ -16,11 +16,12 @@ $(document).ready(function () {
   second_slide.clone().prependTo($("#slider_images"));
   third_slide.clone().prependTo($("#slider_images"));
   fourth_slide.clone().prependTo($("#slider_images"));
+  first_slide.clone().prependTo($("#slider_images"));
 
   // Clone the first slide and add as last li element
   first_slide.clone().appendTo($("#slider_images"));
-
   second_slide.clone().appendTo($("#slider_images"));
   third_slide.clone().appendTo($("#slider_images"));
   fourth_slide.clone().appendTo($("#slider_images"));
+  last_slide.clone().appendTo($("#slider_images"));
 });
