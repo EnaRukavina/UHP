@@ -10,7 +10,7 @@
       integrity="sha256-zgND4db0iXaO7v4CLBIYHGoIIudWI5hRMQrPB20j0Qw="
       crossorigin="anonymous"
     ></script>
-    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
     <!-- styles -->
     <link rel="stylesheet" href="css/main.css" />
     <!-- google fonts -->
@@ -23,40 +23,49 @@
     <!-- HEADER START-->
     <header class="header u-page-padding">
       <!-- NAVIGATION START -->
-      <div class="navigation">
-        <img src="images/UHP_logo.png" alt="UHP logo" class="logo" />
-        <nav class="navigation__container">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="" class="navigation__link navigation__link--active">home</a>
+      <nav>
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <img src="images/UHP_logo.png" class="logo" alt="logo" />
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- links -->
+          <ul class="links">
+            <li>
+              <a href="" class="navigation__link--active">home</a>
             </li>
-            <li class="navigation__item">
-              <a href="" class="navigation__link">news</a>
+            <li>
+              <a href="">news</a>
             </li>
-            <li class="navigation__item">
-              <a href="" class="navigation__link">careers</a>
+            <li>
+              <a href="">careers</a>
             </li>
-            <li class="navigation__item">
-              <a href="" class="navigation__link">people</a>
+            <li>
+              <a href="">people</a>
             </li>
-            <li class="navigation__item">
-              <a href="" class="navigation__link">about us</a>
+            <li>
+              <a href="">about us</a>
             </li>
-            <li class="navigation__item">
-              <a href="" class="navigation__link">contact</a>
+            <li>
+              <a href="">contact</a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
+
       <!-- NAVIGATION END -->
 
       <div class="header__text">
-        <h1 class="heading__primary u-margin-bottom-3">
+        <h1 class="header__title u-margin-bottom-3">
           Web and mobile <span class="header__text--blue">development</span> specialists.
         </h1>
         <div class="cta-btn">let's go digital</div>
       </div>
     </header>
+    <script src="js/nav.js"></script>
     <!-- HEADER END -->
 
     <hr />
@@ -67,7 +76,7 @@
       <div class="card-deck">
         <!-- single card start -->
         <div class="card">
-          <img src="images/web-development-graphic.png" alt="web development graphic" class="card__img" />
+          <img src="images/web-development-graphic2.png" alt="web development graphic" class="card__img" />
           <div class="card__body">
             <h5 class="card__title">
               web development
@@ -83,7 +92,7 @@
         <!-- single card end -->
         <!-- single card start -->
         <div class="card">
-          <img src="images/mobile-development-graphic.png" alt="mobile development graphic" class="card__img" />
+          <img src="images/mobile-development-graphic2.png" alt="mobile development graphic" class="card__img" />
           <div class="card__body">
             <h5 class="card__title">
               mobile development
@@ -99,7 +108,7 @@
         <!-- single card end -->
         <!-- single card start -->
         <div class="card">
-          <img src="images/product-design-graphic.png" alt="product design graphic" class="card__img" />
+          <img src="images/product-design-graphic2.png" alt="product design graphic" class="card__img" />
           <div class="card__body">
             <h5 class="card__title">
               product design
@@ -118,8 +127,8 @@
     <!-- OUR SERVICES SECTION END -->
     <hr />
     <!-- CLIENT WORK SECTION START -->
-    <section class="section-showcase u-page-padding">
-      <img src="images/showcase-bg.png" alt="background image" class="section-showcase__bg" />
+    <section class="section-showcase">
+      <!--  <img src="images/showcase-bg.png" alt="background image" class="section-showcase__bg" /> -->
       <h2 class="section-showcase__title">Client work</h2>
       <p class="section-showcase__paragraph">
         For leading enterprise customers, we develop mobile apps, web front-ends, and scalable cloud solutions
@@ -127,7 +136,7 @@
 
       <div class="showcase">
         <div class="showcase__image">
-          <img src="images/iphones.png" alt="iphones" class="showcase__iphone" />
+          <img src="images/iphones2.png" alt="iphones" class="showcase__iphones" />
         </div>
 
         <div class="showcase__text">

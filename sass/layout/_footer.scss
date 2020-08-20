@@ -15,6 +15,10 @@
   border-top: 1px solid $col-primary-6;
   border-bottom: 1px solid $col-primary-7;
   padding: 6rem 28rem;
+
+  @include respond(1500px) {
+    padding: 3rem 15rem;
+  }
 }
 
 .info {
@@ -46,6 +50,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include respond(1500px) {
+    padding: 3rem 16rem;
+  }
+
   &__text {
     font-size: 1.3rem;
   }
@@ -73,4 +82,8 @@
   left: 50%;
   cursor: pointer;
   transform: translateX(-50%);
+
+  img {
+    display: block;
+  }
 }

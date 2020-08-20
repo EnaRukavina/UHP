@@ -5,3 +5,103 @@
     clear: both;
   }
 }
+
+//MEDIA QUERY MANAGER
+
+/*
+
+0 - 600px:  Phone
+600-900px: Tablet portrait
+900-1200px: Tablet landscape
+(1200-1800) is where our normal styles apply
+1800px + : Big desktop
+
+1625px = 101,56em
+1580 = 98,75em
+1500px = 93,75‬em
+1450px = 90,62px
+1370px = 85,625‬em
+1270px = 79.375em
+1200px = 75em
+1100px =  68.75em
+1000px = 62.5em
+900px = 56.25em
+800px = 50em
+
+
+*/
+
+//1em=16px
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == 800px {
+    @media only screen and (max-width: 50.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == 900px {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 1000px {
+    @media only screen and (max-width: 62.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 1100px {
+    @media only screen and (max-width: 68.75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 1200px {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 1270px {
+    @media only screen and (max-width: 79.375em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 1370px {
+    @media only screen and (max-width: 85.625em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 1450px {
+    @media only screen and (max-width: 90.62em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 1500px {
+    @media only screen and (max-width: 93.75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 1580px {
+    @media only screen and (max-width: 98.75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 1625px {
+    @media only screen and (max-width: 101.56em) {
+      @content;
+    }
+  }
+
+  /* @if $breakpoint == tab-land {
+    //1200px
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == big-desktop {
+    //1800px
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  } */
+}

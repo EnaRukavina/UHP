@@ -3,39 +3,62 @@ body {
   background: url("../images/bg.png") no-repeat;
   background-position: 100%;
   background-size: 150%;
-  background-position: top 0 right 0;
+  background-position: top 0 right -2rem;
   background-size: 116rem;
+
+  @include respond(1370px) {
+    background-size: 110rem;
+  }
+
+  @include respond(1200px) {
+    background-size: 100rem;
+  }
+
+  @include respond(800px) {
+    background-size: 85rem;
+  }
 }
+///////
 
 .header {
   padding-top: 5rem;
-  background: url("../images/header_graphic.png") no-repeat;
-  background-position: top 23rem right 14rem;
+
   &__text {
     width: 65rem;
     margin: 23rem 0;
-
     &--blue {
       color: $col-primary-1;
+    }
+
+    @include respond(800px) {
+      margin: 19rem 0;
+    }
+    @include respond(1370px) {
+      width: 56rem;
+    }
+  }
+
+  &__title {
+    font-family: $font-primary;
+    font-size: 8rem;
+    color: $col-black;
+
+    @include respond(1580px) {
+      font-size: 7rem;
+    }
+    @include respond(1500px) {
+      font-size: 6rem;
+    }
+    @include respond(1370px) {
+      font-size: 5.5rem;
+    }
+    @include respond(1370px) {
+      font-size: 4.5rem;
     }
   }
 }
 
-.cta-btn {
-  font-family: $font-primary;
-  font-weight: 700;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  display: inline-block;
-  color: $col-white;
-  background-image: $gradient-1;
-  text-align: center;
-  padding: 2rem 4.5rem;
-  border-radius: 1rem;
-  cursor: pointer;
-  transition: all 0.2s;
-
-  &:hover {
-    background-image: $gradient-1-reverse;
-  }
+//** FOR MOBILE NAVIGATION **//
+.header__text-hide {
+  margin-top: 0;
 }

@@ -1,5 +1,4 @@
 .section-showcase {
-  position: relative;
   &__title {
     text-align: center;
     font-family: $font-primary;
@@ -13,23 +12,36 @@
     font-weight: 400;
     font-size: 2rem;
   }
-  &__bg {
-    position: absolute;
-    left: 0;
-    z-index: 1;
-    top: 11rem;
-  }
 }
 
 .showcase {
-  margin: 11rem 0 28rem;
+  margin: 6rem 0 5rem;
   display: flex;
   justify-content: space-between;
 
   &__image {
-    position: relative;
-    margin-right: 18rem;
-    margin-left: 12rem;
+    flex-basis: 60%;
+    @include respond(1500px) {
+      position: relative;
+      right: 6rem;
+    }
+  }
+  &__iphones {
+    width: 100%;
+  }
+  &__text {
+    padding-right: 16rem;
+    padding-top: 8rem;
+    flex-basis: 50%;
+    @include respond(1500px) {
+      padding-right: 10rem;
+    }
+    @include respond(1100px) {
+      padding-top: 2rem;
+    }
+    @include respond(1000px) {
+      padding-right: 5rem;
+    }
   }
 
   &__title {
@@ -38,6 +50,13 @@
     font-weight: 700;
     color: $col-black;
     margin-left: 7rem;
+
+    @include respond(1580px) {
+      font-size: 4.5rem;
+    }
+    @include respond(1200px) {
+      margin-left: 0;
+    }
   }
 
   &__subtitle {
@@ -47,6 +66,12 @@
     color: $col-primary-1;
     margin-bottom: 5rem;
     margin-left: 7rem;
+    @include respond(1580px) {
+      font-size: 4.5rem;
+    }
+    @include respond(1200px) {
+      margin-left: 0;
+    }
   }
 
   &__plan {
@@ -72,6 +97,7 @@
       float: left;
       position: relative;
       top: 2.3rem;
+      width: 4rem;
     }
   }
 

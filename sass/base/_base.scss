@@ -10,6 +10,21 @@ html {
   font-size: 62.5%;
   // defines 1rem=10px
   scroll-behavior: smooth;
+  @include respond(1370px) {
+    font-size: 60%;
+  }
+  @include respond(1270px) {
+    font-size: 55%;
+  }
+  @include respond(1100px) {
+    font-size: 50%;
+  }
+  @include respond(900px) {
+    font-size: 45%;
+  }
+  @include respond(800px) {
+    font-size: 40%;
+  }
 }
 
 body {
@@ -23,4 +38,12 @@ hr {
   height: 4px;
   border: none;
   border-radius: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }

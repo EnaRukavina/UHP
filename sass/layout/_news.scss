@@ -12,6 +12,11 @@
 .box-container {
   display: flex;
   justify-content: space-between;
+
+  @include respond(800px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .box {
@@ -28,8 +33,17 @@
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
+
+  @include respond(1200px) {
+    padding: 3rem 2rem 3rem;
+  }
+
   &:not(:last-child) {
     margin-right: 3rem;
+    @include respond(800px) {
+      margin-right: 0;
+      margin-bottom: 3rem;
+    }
   }
 
   &__header {
@@ -75,6 +89,10 @@
         flex: 1;
         margin-right: 0.5rem;
         cursor: pointer;
+
+        @include respond(900px) {
+          width: 1rem;
+        }
 
         &:hover {
           transform: scale(1.2);

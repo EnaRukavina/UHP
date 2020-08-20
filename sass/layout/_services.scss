@@ -7,67 +7,89 @@
     font-weight: 600;
     color: $col-black;
     text-align: center;
-    margin-bottom: 4.5rem;
-    margin-top: 2rem;
+    margin: 2rem 0 4.5rem;
+
+    @include respond(1370px) {
+      margin: 4rem 0 5.5rem;
+    }
   }
 }
 
-@media (min-width: 576px) {
-  .card-deck {
+.card-deck {
+  isplay: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin: 0 6rem;
+
+  @include respond(1370px) {
+    margin: 0;
+  }
+  @include respond(800px) {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .card {
+    position: relative;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    margin: 0 6rem;
-  }
-  .card-deck .card {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
     -ms-flex: 1 0 0%;
     flex: 1 0 0%;
-  }
-}
-.card {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-image: $gradient-2;
-  padding: 4rem 6rem 4.5rem;
-  box-shadow: 0.5rem 0.8rem 1rem rgba(0, 0, 0, 0.4);
+    background-image: $gradient-2;
+    padding: 4rem 6rem 4.5rem;
+    box-shadow: 0.5rem 0.8rem 1rem rgba(0, 0, 0, 0.4);
 
-  &:not(:last-child) {
-    margin-right: 5rem;
-  }
+    @include respond(1270px) {
+      padding: 4rem 4rem 4.5rem;
+    }
+    @include respond(800px) {
+      width: 50%;
+    }
 
-  &__img {
-    flex-shrink: 0;
-    width: max-content;
-    margin: auto;
-  }
-  &__body {
-    flex: 1 1 auto;
-  }
-  &__title {
-    font-family: $font-primary;
-    color: $col-white;
-    font-weight: 700;
-    font-size: 2rem;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 2rem 0;
-  }
-  &__text {
-    font-family: $font-secondary;
-    color: $col-white;
-    font-weight: 400;
-    font-size: 1.6rem;
-    text-align: center;
-    line-height: 1.5;
-  }
-  &__footer {
-    margin: auto;
-    margin-top: 4rem;
+    &:not(:last-child) {
+      margin-right: 5rem;
+      @include respond(800px) {
+        margin-right: 0;
+        margin-bottom: 4rem;
+      }
+    }
+
+    &__img {
+      flex-shrink: 0;
+      width: 100%;
+      margin: auto;
+      @include respond(800px) {
+        width: inherit;
+      }
+    }
+    &__body {
+      flex: 1 1 auto;
+    }
+    &__title {
+      font-family: $font-primary;
+      color: $col-white;
+      font-weight: 700;
+      font-size: 2rem;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 2rem 0;
+    }
+    &__text {
+      font-family: $font-secondary;
+      color: $col-white;
+      font-weight: 400;
+      font-size: 1.6rem;
+      text-align: center;
+      line-height: 1.5;
+    }
+    &__footer {
+      margin: auto;
+      margin-top: 4rem;
+    }
   }
 }
