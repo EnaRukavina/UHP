@@ -30,11 +30,11 @@ body {
       color: $col-primary-1;
     }
 
-    @include respond(800px) {
-      margin: 19rem 0;
-    }
     @include respond(1370px) {
       width: 56rem;
+    }
+    @include respond(800px) {
+      margin: 19rem 0;
     }
   }
 
@@ -52,7 +52,7 @@ body {
     @include respond(1370px) {
       font-size: 5.5rem;
     }
-    @include respond(1370px) {
+    @include respond(800px) {
       font-size: 4.5rem;
     }
   }

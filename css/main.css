@@ -1027,15 +1027,15 @@ body {
   color: #00a6eb;
 }
 
-@media only screen and (max-width: 50.5em) {
-  .header__text {
-    margin: 19rem 0;
-  }
-}
-
 @media only screen and (max-width: 85.625em) {
   .header__text {
     width: 56rem;
+  }
+}
+
+@media only screen and (max-width: 50.5em) {
+  .header__text {
+    margin: 19rem 0;
   }
 }
 
@@ -1115,7 +1115,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 85.625em) {
+@media only screen and (max-width: 50.5em) {
   .header__title {
     font-size: 4.5rem;
   }
