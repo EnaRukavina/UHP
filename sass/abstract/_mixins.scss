@@ -26,7 +26,7 @@
 1100px =  68.75em
 1000px = 62.5em
 900px = 56.25em
-800px = 50em
+799px = 50em
 
 
 */
@@ -35,7 +35,7 @@
 
 @mixin respond($breakpoint) {
   @if $breakpoint == 800px {
-    @media only screen and (max-width: 50.5em) {
+    @media only screen and (max-width: 49.9375em‬) {
       @content;
     }
   }
