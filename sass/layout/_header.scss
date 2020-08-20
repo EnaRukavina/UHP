@@ -26,15 +26,15 @@ body {
   &__text {
     width: 65rem;
     margin: 23rem 0;
-    &--blue {
-      color: $col-primary-1;
-    }
 
     @include respond(1370px) {
       width: 56rem;
     }
     @include respond(800px) {
       margin: 19rem 0;
+    }
+    &--blue {
+      color: $col-primary-1;
     }
   }
 
