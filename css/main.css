@@ -846,9 +846,9 @@ a {
   } */
 }
 
-@media only screen and (max-width: 43.75em) {
+@media only screen and (max-width: 49.94em) {
   .facts {
-    padding: 12rem 0 16rem;
+    padding: 12rem 0 5rem;
   }
 }
 
@@ -863,7 +863,7 @@ a {
 
 @media only screen and (max-width: 25em) {
   .facts {
-    padding: 12rem 0 10rem;
+    padding: 12rem 0 0;
   }
 }
 
@@ -1507,7 +1507,7 @@ body {
 
 @media only screen and (max-width: 43.75em) {
   .header {
-    padding-bottom: 15rem;
+    padding-bottom: 10rem;
   }
 }
 
@@ -2184,9 +2184,9 @@ body {
   } */
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 49.94em) {
   .services-section {
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
   }
 }
 
@@ -2262,7 +2262,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 49.94em) {
+@media only screen and (max-width: 43.75em) {
   .card-deck {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2365,7 +2365,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 49.94em) {
+@media only screen and (max-width: 43.75em) {
   .card-deck .card {
     width: 50%;
   }
@@ -2406,7 +2406,7 @@ body {
   } */
 }
 
-@media only screen and (max-width: 49.94em) {
+@media only screen and (max-width: 43.75em) {
   .card-deck .card:not(:last-child) {
     margin-right: 0;
     margin-bottom: 4rem;
@@ -2446,7 +2446,7 @@ body {
   } */
 }
 
-@media only screen and (max-width: 49.94em) {
+@media only screen and (max-width: 43.75em) {
   .card-deck .card__img {
     width: 22rem;
   }
@@ -2487,7 +2487,7 @@ body {
   } */
 }
 
-@media only screen and (max-width: 49.94em) {
+@media only screen and (max-width: 43.75em) {
   .card-deck .card__title {
     font-size: 2.7rem;
   }
@@ -2515,7 +2515,7 @@ body {
   } */
 }
 
-@media only screen and (max-width: 49.94em) {
+@media only screen and (max-width: 43.75em) {
   .card-deck .card__text {
     font-size: 2.2rem;
   }

@@ -33,8 +33,8 @@
   justify-content: space-between;
   padding: 12rem 5rem 16rem;
 
-  @include respond(700px) {
-    padding: 12rem 0 16rem;
+  @include respond(800px) {
+    padding: 12rem 0 5rem;
   }
 
   @include respond(600px) {
@@ -42,7 +42,7 @@
     flex-wrap: wrap;
   }
   @include respond(400px) {
-    padding: 12rem 0 10rem;
+    padding: 12rem 0 0;
   }
 }
 .fact {

@@ -43,7 +43,7 @@ body {
   padding-bottom: 23rem;
 
   @include respond(700px) {
-    padding-bottom: 15rem;
+    padding-bottom: 10rem;
   }
   @include respond(500px) {
     background: rgba(255, 255, 255, 0.5);
