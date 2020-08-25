@@ -17,21 +17,54 @@ body {
   @include respond(800px) {
     background-size: 85rem;
   }
+
+  @include respond(700px) {
+    background-size: 65rem;
+  }
+
+  @include respond(500px) {
+    background: url("../images/bg-mobile.png") no-repeat;
+    background-position: 100%;
+    background-size: 150%;
+    background-position: top -4.5rem right -2rem;
+    background-size: 90rem;
+  }
+  @include respond(400px) {
+    background-position: top -9rem right -7rem;
+  }
+  @include respond(280px) {
+    background-position: top -9rem right -12rem;
+  }
 }
 ///////
 
 .header {
   padding-top: 5rem;
+  padding-bottom: 23rem;
+
+  @include respond(700px) {
+    padding-bottom: 15rem;
+  }
+  @include respond(500px) {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  @include respond(400px) {
+    padding-top: 1rem;
+  }
 
   &__text {
     width: 65rem;
-    margin: 23rem 0;
+    margin-top: 23rem;
 
     @include respond(1370px) {
       width: 56rem;
     }
     @include respond(800px) {
-      margin: 19rem 0;
+      margin-top: 19.5rem;
+    }
+    @include respond(500px) {
+      width: 100%;
+      text-align: center;
     }
     &--blue {
       color: $col-primary-1;
@@ -54,6 +87,9 @@ body {
     }
     @include respond(800px) {
       font-size: 4.5rem;
+    }
+    @include respond(500px) {
+      padding-top: 5rem;
     }
   }
 }

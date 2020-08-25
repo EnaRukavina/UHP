@@ -27,13 +27,41 @@
 1000px = 62.5em
 900px = 56.25em
 799px = 50em
-
-
+700px = 43.75em
+600px = 37.5em
+500px = 31.25em
+400px = 25em
+280px = 17.5em
 */
 
 //1em=16px
 
 @mixin respond($breakpoint) {
+  @if $breakpoint == 280px {
+    @media only screen and (max-width: 17.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 400px {
+    @media only screen and (max-width: 25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 500px {
+    @media only screen and (max-width: 31.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 600px {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 700px {
+    @media only screen and (max-width: 43.75em) {
+      @content;
+    }
+  }
   @if $breakpoint == 800px {
     @media only screen and (max-width: 49.94em) {
       @content;

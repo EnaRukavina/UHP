@@ -19,6 +19,12 @@
   @include respond(1500px) {
     padding: 3rem 15rem;
   }
+  @include respond(700px) {
+    padding: 3rem 5rem;
+  }
+  @include respond(600px) {
+    flex-direction: column;
+  }
 }
 
 .info {
@@ -26,19 +32,40 @@
   font-family: $font-primary;
   display: flex;
   align-items: center;
+
+  &:not(:last-child) {
+    @include respond(600px) {
+      margin-bottom: 2rem;
+    }
+  }
+
   &__icon {
     margin-right: 3rem;
+
+    @include respond(600px) {
+      margin-right: 0;
+      width: 7rem;
+    }
     &__img {
+      @include respond(600px) {
+        width: 50%;
+      }
     }
   }
   &__text {
     &--top {
       font-size: 1.8rem;
+      @include respond(600px) {
+        font-size: 2rem;
+      }
     }
     &--bottom {
       font-size: 1.4rem;
       color: $col-primary-1;
       cursor: pointer;
+      @include respond(600px) {
+        font-size: 1.6rem;
+      }
     }
   }
 }
@@ -54,9 +81,23 @@
   @include respond(1500px) {
     padding: 3rem 16rem;
   }
+  @include respond(700px) {
+    padding: 3rem 6rem;
+  }
+  @include respond(400px) {
+    flex-direction: column-reverse;
+  }
 
   &__text {
     font-size: 1.3rem;
+    @include respond(600px) {
+      font-size: 1.6rem;
+      width: 15rem;
+    }
+    @include respond(400px) {
+      width: auto;
+      margin: 3rem 0 5rem;
+    }
   }
   &__icons {
     font-size: 3rem;
@@ -68,6 +109,9 @@
       }
       &:last-child {
         margin-right: 3rem;
+        @include respond(400px) {
+          margin-right: 0;
+        }
       }
       &:hover {
         color: $col-primary-1;
@@ -85,5 +129,9 @@
 
   img {
     display: block;
+    width: 15rem;
+    @include respond(600px) {
+      width: 12rem;
+    }
   }
 }

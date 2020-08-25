@@ -8,6 +8,13 @@
 
 .banner {
 }
+
+.slider-img {
+  @include respond(1000px) {
+    height: 30rem;
+  }
+}
+
 .lSSlideOuter {
   overflow: hidden;
   -webkit-touch-callout: none;

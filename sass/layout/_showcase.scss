@@ -11,6 +11,9 @@
     font-family: $font-primary;
     font-weight: 400;
     font-size: 2rem;
+    @include respond(700px) {
+      padding: 0 5rem;
+    }
   }
 }
 
@@ -19,11 +22,20 @@
   display: flex;
   justify-content: space-between;
 
+  @include respond(700px) {
+    flex-direction: column;
+    padding: 0 5rem;
+  }
+
   &__image {
     flex-basis: 60%;
     @include respond(1500px) {
       position: relative;
       right: 6rem;
+    }
+    @include respond(500px) {
+      width: 100vw;
+      right: 9rem;
     }
   }
   &__iphones {
@@ -42,6 +54,9 @@
     @include respond(1000px) {
       padding-right: 5rem;
     }
+    @include respond(700px) {
+      padding-right: 0;
+    }
   }
 
   &__title {
@@ -57,6 +72,9 @@
     @include respond(1200px) {
       margin-left: 0;
     }
+    @include respond(700px) {
+      text-align: center;
+    }
   }
 
   &__subtitle {
@@ -71,6 +89,9 @@
     }
     @include respond(1200px) {
       margin-left: 0;
+    }
+    @include respond(700px) {
+      text-align: center;
     }
   }
 
@@ -91,6 +112,10 @@
       font-weight: 400;
       font-size: 1.8rem;
       line-height: 1.4;
+
+      @include respond(800px) {
+        font-size: 2rem;
+      }
     }
 
     &__icon {

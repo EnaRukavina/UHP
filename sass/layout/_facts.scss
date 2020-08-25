@@ -32,9 +32,24 @@
   font-family: $font-primary;
   justify-content: space-between;
   padding: 12rem 5rem 16rem;
+
+  @include respond(700px) {
+    padding: 12rem 0 16rem;
+  }
+
+  @include respond(600px) {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  @include respond(400px) {
+    padding: 12rem 0 10rem;
+  }
 }
 .fact {
-  flex-basis: 18rem;
+  flex-basis: 19rem;
+  @include respond(600px) {
+    padding: 1rem;
+  }
   &__icon {
     margin-bottom: 2rem;
     width: 11rem;

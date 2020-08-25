@@ -7,6 +7,9 @@
   @include respond(1000px) {
     padding: 0 5rem;
   }
+  @include respond(400px) {
+    padding: 0 1rem;
+  }
 }
 
 .u-margin-bottom-3 {

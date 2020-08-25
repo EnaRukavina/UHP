@@ -35,6 +35,7 @@
   word-wrap: break-word;
 
   @include respond(1200px) {
+    width: unset;
     padding: 3rem 2rem 3rem;
   }
 
@@ -77,14 +78,26 @@
     color: $col-grey-2;
     margin-bottom: 3rem;
     flex: 1 1 auto;
+    @include respond(800px) {
+      font-size: 2rem;
+    }
   }
 
   &__footer {
     display: flex;
     justify-content: space-between;
 
+    @include respond(800px) {
+      justify-content: center;
+    }
+
     &__item {
       display: flex;
+
+      @include respond(800px) {
+        margin-right: 3rem;
+      }
+
       &__icon {
         flex: 1;
         margin-right: 0.5rem;
@@ -102,6 +115,9 @@
         font-size: 1.4rem;
         color: $col-grey-1;
         flex-shrink: 0;
+        @include respond(800px) {
+          font-size: 1.6rem;
+        }
       }
     }
   }
