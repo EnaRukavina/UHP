@@ -1874,6 +1874,25 @@ body {
 
 .news-section {
   margin: 10rem 0 12rem;
+  /* @if $breakpoint == tab-land {
+    //1200px
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == big-desktop {
+    //1800px
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  } */
+}
+
+@media only screen and (max-width: 49.94em) {
+  .news-section {
+    margin-top: 5rem;
+  }
 }
 
 .news-section__title {

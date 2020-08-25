@@ -1,5 +1,8 @@
 .news-section {
   margin: 10rem 0 12rem;
+  @include respond(800px) {
+    margin-top: 5rem;
+  }
   &__title {
     font-family: $font-primary;
     font-size: 4.5rem;
